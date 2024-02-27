@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<safety &le; 2.5<br/>gini = 0.452<br/>samples = 1382<br/>value = [301, 58, 975, 48]<br/>class = unacc>, fillcolor="#84c2ef"] ;
+1 [label=<persons &le; 2.5<br/>gini = 0.577<br/>samples = 913<br/>value = [301, 58, 506, 48]<br/>class = unacc>, fillcolor="#bddef6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<maintainance &le; 1.5<br/>gini = 0.631<br/>samples = 615<br/>value = [301, 58, 208, 48]<br/>class = unacc>, fillcolor="#f9e2d2"] ;
+1 -> 2 ;
+3 [label=<gini = 0.462<br/>samples = 149<br/>value = [54, 0, 95, 0]<br/>class = unacc>, fillcolor="#aad5f4"] ;
+2 -> 3 ;
+4 [label=<gini = 0.634<br/>samples = 466<br/>value = [247, 58, 113, 48]<br/>class = unacc>, fillcolor="#f5cfb4"] ;
+2 -> 4 ;
+5 [label=<gini = 0.0<br/>samples = 298<br/>value = [0, 0, 298, 0]<br/>class = unacc>, fillcolor="#399de5"] ;
+1 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 469<br/>value = [0, 0, 469, 0]<br/>class = unacc>, fillcolor="#399de5"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
